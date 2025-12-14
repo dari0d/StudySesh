@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local Android config (DO NOT COMMIT)
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Keystores (DO NOT COMMIT)
+*.jks
+*.keystore
+key.properties
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Outputs
+*.apk
+*.aab
