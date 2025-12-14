@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9d5e0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c9d5e0"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Title (unchanged, not used in Java) -->
+            <TextView
+                android:id="@+id/txtTitleStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="This Sesh's Stats"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- NEW: Sesh name label + value for txtSummarySeshName -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sesh Name:" />
+
+            <TextView
+                android:id="@+id/txtSummarySeshName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="-" />
+
+            <!-- Focus score -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Focus Score:" />
+
+            <TextView
+                android:id="@+id/txtSummaryFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="-" />
+
+            <!-- Phone pickups -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Pickups:" />
+
+            <TextView
+                android:id="@+id/txtSummaryPhonePickups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="-" />
+
+            <!-- Sesh streak -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sesh Streak:" />
+
+            <TextView
+                android:id="@+id/txtSummarySeshStreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="-" />
+
+            <!-- Concentration streak -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concentration Streak:" />
+
+            <TextView
+                android:id="@+id/txtSummaryConcentration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <!-- Back button with id expected by StatsSummaryActivity -->
+        <Button
+            android:id="@+id/btnBackHomeStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Back to Home" />
+    </LinearLayout>
+</ScrollView>
